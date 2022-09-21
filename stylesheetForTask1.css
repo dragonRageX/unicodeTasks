@@ -1,0 +1,404 @@
+body
+{
+    
+    font-family: 'Rampart One', cursive;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+header
+{
+    background: rgb(138, 53, 119);
+    /* min-width: 100vw;
+    min-height: 100vh; */   /*MENTIONED IN freecodecamp ARTICLE: "HTML vs Body: How to Set Width and Height for Full Page Size". ALWAYS USE vw AND vh AS SIZING UNITS!*/
+    /* margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; */
+    box-shadow: 0px 0px 0px 100vmax rgb(138, 53, 119);
+    clip-path: inset(0 -100vmax);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-bar
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 20px 40px 20px;
+    font-size: 18px;
+    background: brown;
+    /* padding: 0px 2px; */
+    box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.nav-bar a:hover
+{
+    font-size: large;
+    color: darkorange;
+}
+
+.nav-bar a:active
+{
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
+
+nav
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+.flex-item1
+{
+    margin: 50px;
+    line-height: 50px;
+}
+
+.head1
+{
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.typewriter-blinking-container
+{
+    display: inline-block;
+}
+
+.head2
+{
+    font-size: 56px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    background: darkorange;
+    max-height: 100%;
+    overflow: hidden;
+    border-right: 4px solid black;   /*FOR THE CURSOR, WE MAKE USE OF THE RIGHT SIDE BORDER OF THE CONTAINER.*/
+    /* white-space: nowrap; */
+    animation: typing 2.5s steps(50, end) 0.8s 1 forwards, blinking 0.8s linear 2.5s infinite forwards;
+    width: 0px;
+}
+
+.head3
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+span
+{
+    font-style: italic;
+}
+
+.flex-item2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    /* padding-top: 50px; */
+}
+
+.my-photo
+{
+    background: white;
+    padding: 7px;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 7px solid red;
+}
+
+.down-arrow-head
+{
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined 
+{
+    font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+    transform: scale(1.7);
+    margin: 50px 0px 30px 30px;
+    animation: transcending-arrow-head 2s ease-out 0s infinite normal;
+}
+
+main
+{
+    color: darkorange;   /*CHANGE THE FONT FAMILY IF YOU CAN.*/
+    text-shadow: 0.3px 0.3px 1px darkorange;
+    margin: 0px 10px;
+}
+
+.about-me-page
+{
+    display: flex;
+    margin: 60px 0px 20px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me
+{
+    background: black;
+    padding: 2px 12px;
+    font-size: 16px;
+}
+
+.know-me-more
+{
+    font-size: 30px;
+    margin-top: -2px;
+}
+
+.intro
+{
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+.name
+{
+    color: black;
+    text-shadow: 0.3px 0.3px 1px black;
+    border-bottom: 3px solid black;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 0px 30px;
+    margin: 0px 10px;
+}
+
+.my-info
+{
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.styled-break
+{
+    width: 100%;
+    height: 7px;
+    background: black;
+    margin-top: -15px;
+}
+
+footer
+{
+    margin: 60px;   /*THE OTHER WAY TO ALIGN THE ICONS AND THE TEXT UNDER IT IN THE SAME LINE, IS TO MAKE A FLEX-CONTAINER OUT OF ALL THE ICONS AND MAKE ANOTHER FLEX-CONTAINER OUT OF THE TEXT AND USE justify-content: space-evenly IN BOTH THE CONTAINERS.*/
+}
+
+.contact-me
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mail-tab
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.gg-mail
+{
+    transform: scale(1.8);
+    margin: 10px;
+    background-color: darkorange;
+}
+
+.email
+{
+    text-shadow: 0.3px 0.3px 1px darkorange;
+    text-align: center;
+}
+
+.phone-tab
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.gg-phone
+{
+    transform: scale(1.1);
+    background-color: darkorange;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 3px;
+}
+
+.phone
+{
+    text-shadow: 0.3px 0.3px 1px darkorange;
+    text-align: center;
+}
+
+.location-tab
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.gg-pin
+{
+    scale: 1.4;
+    transform: rotate(45deg);
+    background-color: darkorange;
+    margin: 9px;
+}
+
+.location
+{
+    text-shadow: 0.3px 0.3px 1px darkorange;
+    text-align: center;
+}
+
+.code-tab
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.gg-code
+{
+    transform: scale(1.8);
+    margin: 7px;
+    background-color: darkorange;
+    border-radius: 30px;
+}
+
+.code
+{
+    text-shadow: 0.3px 0.3px 1px darkorange;
+    text-align: center;
+}
+
+@import url('https://css.gg/mail.css');   /*ADD THE if-else CONDITIONS - @media only screen and (max-width: 700px)*/
+
+@import url('https://css.gg/phone.css');
+
+@import url('https://css.gg/pin.css');
+
+@import url('https://css.gg/code.css');
+
+@import url('https://css.gg/menu.css');
+
+@keyframes transcending-arrow-head
+{
+    0%{
+        opacity: 0;
+        transform: translate(0px, 0px);
+        transform: scale(1.7);
+    }
+    33%{
+        opacity: 0.5;
+        transform: translate(0px,12px);
+        transform: scale(1.7);
+    }
+    50%{
+        opacity: 0.9;
+        transform: translate(0px, 16px);
+        transform: scale(1.7);
+    }
+    80%{
+        opacity: 1;
+        transform: translate(0px, 22px);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0px, 22px);
+    }
+}
+
+@keyframes typing
+{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blinking
+{
+    from { 
+        border-color: transparent;
+    }
+    to { 
+        border-color: black;
+    }
+}
+
+.bg-image-container
+{
+    margin: 60px 0px 20px 0px;
+    background: url("https://scx2.b-cdn.net/gfx/news/hires/2018/handshake.jpg");
+    background-repeat: round;
+    background-size: auto;
+    width: 100%;
+}
+
+.hire-me-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.637);
+}
+
+.hire-me
+{
+    color: white;
+    background: darkorange;
+    padding: 5px 25px;
+    margin: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hire-me:hover
+{
+    color: black;
+    /* text-shadow: 0.3px 0.3px 1px black; */
+}
+
+.work
+{
+    color: white;
+    font-size: 16px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <title>task1</title>
+        <meta name = "description" content = "This is a responsive website/portfolio. We made use of CSS to build this one.">
+        <meta name = "author" content = "Param">
+        <meta name = "keywords" content = "CSS, website, portfolio, cascadingStyleSheets, web 2, webDev">   <!--CSS IS USED FOR STYLING OR TO DESIGN A WEBSITE WHEREAS HTML FOCUSSES ON THE STRUCTURE AND THE CONTENT OR LAYOUT OF THE WEBSITE-->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">   <!--HTML AND CSS ALWAYS GO HAND IN HAND-->
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans:ital@1&family=Raleway&family=Rampart+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   <!--GOOGLE ICON LINK-->
+        <link href='https://css.gg/mail.css' rel='stylesheet'>
+        <link href='https://css.gg/phone.css' rel='stylesheet'>
+        <link href='https://css.gg/pin.css' rel='stylesheet'>
+        <link href='https://css.gg/code.css' rel='stylesheet'>
+        <link rel = "stylesheet" type = "text/css" href = "stylesheetForTask1.css">   <!--WE USE '.css' AS THE STANDARD TEXT FORMAT FOR CSS FILES-->
+    </head>
+    <body>
+        <header>
+            <div class = "nav-bar">
+                <a href = "#about-me-pointer">About Me</a>   <!--ADD transitions MAYBE.-->
+                <a href = "">My Tinkercad</a>   <!--LINK TO MY TINKERCAD ACCOUNT-->
+                <a href = "#contact-me">Contact Me</a>
+            </div>
+            <nav>
+                <div class = "flex-item1">
+                    <h4 class = "head1">Hi, I'm an <span>aspiring</span></h4>
+                    <div class = "typewriter-blinking-container">
+                        <h1 class = "head2">Developer, Designer</h1>   <!--USE ANIMATIONS-->
+                    </div>
+                    <p class = "head3">a present undergraduate.</p>
+                </div>
+                <div class = "flex-item2">
+                    <img src = "C:\Users\Param.DESKTOP-MEMSLIO\Downloads\My Documents\My Documents\My photo.jpeg" class = "my-photo" alt = "My Photo" />  <!--Get a better image if possible. The Callum Guy had used flex-wrap: wrap-reverse WITH THE IMAGE BEING THE FIRST ELEMENT FOLLOWED BY THE 'Hi, I'm an aspiring developer, designer...'-->
+                </div>
+            </nav>
+            <div class = "down-arrow-head">
+                <span class="material-symbols-outlined">arrow_downward</span>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class = "about-me-page">
+                    <p class = "about-me" id = "about-me-pointer"><b>About Me</b></p>
+                    <p class = "know-me-more"><b>Know Me More</b></p>
+                </div>
+                <p class = "intro">Hi, I'm <b class = "name">Param Shah</b></p>
+            </section>
+            <section class = "grid-container">
+                <div class = "grid-item" style = "order: 1">
+                    <h4 class = "my-info">Objective</h4>
+                    <div class = "styled-break"></div>
+                    <p>I love science and it fascinates me immensely (I'm definitely not saying this after watching Discovery Science :)). Web Development rightly brings Technology and Art together and I've got an eye for that. This is my first time digging hands into website building and I'm thoroughly enjoying it.<p>   <!--USE FLEX-WRAP-->
+                </div>
+                <div class = "grid-item" style = "order: 4">
+                    <h4 class = "my-info">Skills</h4>
+                    <div class = "styled-break"></div>
+                    <ul>
+                        <li>Having been the captain of my school cricket team, hence a proven leader and a team player too.</li> 
+                        <li>Learning new stuff is the thing for me.</li> 
+                        <li>Good communication skills and more importantly a good listener.</li> 
+                        <li>If this counts, I am an avid reader.</li>
+                    </ul>
+                </div>
+                <div class = "grid-item" style = "order: 2">
+                    <h4 class = "my-info">Experience</h4>
+                    <div class = "styled-break"></div>
+                    <p>A PROUD TEAM MEMBER OF DJS HELIOS (ELECTRONICS DEPT.)</p>
+                    <p>LEARNING C++ CURRENTLY WITH KNOWLEDGE OF THE BARE BASICS ALONG WITH OOPS AND POINTERS.</p>
+                    <p>KNOW THE BASICS OF C AND PYTHON.</p>
+                    <p>LEARNT HTML, CSS WITH FOCUS ON WEB DEVELOPMENT.</p>
+                    <p>HAVING KNOWLEDGE OF MICROCONTROLLERS AND SENSORS.</p>
+                    <p>LEARNING TINKERCAD.</p>
+                </div>
+                <div class = "grid-item" style = "order: 3">
+                    <h4 class = "my-info">Education</h4>
+                    <div class = "styled-break"></div>
+                    <p>CURRENTLY PURSUING COMPUTER ENGINEERING AT D.J. SANGHVI, MUMBAI.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class = "contact-me" id = "contact-me">
+                <div class = "mail-tab">
+                    <i class="gg-mail"></i>
+                    <div class = "email">EMAIL: abc@gmail.com</div>
+                </div>
+                <div class = "phone-tab">
+                    <i class="gg-phone"></i>
+                    <div class = "phone">PHONE: 123xyz</div>
+                </div>
+                <div class = "location-tab">
+                    <i class="gg-pin"></i>
+                    <div class = "location">FROM: Mumbai, India</div>
+                </div>
+                <div class = "code-tab">
+                    <i class="gg-code"></i>
+                    <div class = "code">CODE: HTML, CSS, JS</div>
+                </div>
+            </div>
+            <div class = "bg-image-container">
+                <div class = "hire-me-container">
+                    <div class = "work">Interested in working with me?</div>
+                    <div class = "hire-me"><a href = "hireMe.html">Hire Me!</a></div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
