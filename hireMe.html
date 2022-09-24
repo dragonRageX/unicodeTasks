@@ -17,27 +17,31 @@
             <h1>Hire Me!</h1>
         </header>
         <main>
-            <form>
+            <form id = "form" method = "post" action = "" onsubmit = "return validate()">
                 <h2>Contact Me</h2>
                 <div class="input-section">
                     <div class="input-group">
                       <label for="first-name">First Name: </label>
-                      <input type="text" id="first-name" name="first-name" placeholder="eg.John" required></input>
+                      <input type="text" id="first-name" name="first-name" placeholder="eg.John" required />
+                      <div id = "first-name-error"></div>
                     </div>
                     <div class="input-group">
                         <label for="last-name">Last Name: </label>
-                        <input type="text" id="last-name" name="last-name" placeholder="eg.Doe" required></input>
+                        <input type="text" id="last-name" name="last-name" placeholder="eg.Doe" required />
+                        <div id = "last-name-error"></div>
                     </div>
                 </div>
                 <div class = "input-section">
                     <div class = "input-group">
                         <label for = "email-id">Your E-mail Address: </label>
-                        <input type = "email" id = "email-id" name = "email-id" placeholder = "eg. noveltyBuilders@yahoo.com" required></input>
+                        <input type = "email" id = "email-id" name = "email-id" placeholder = "eg. noveltyBuilders@yahoo.com" required />
+                        <div id = "email-error"></div>
                     </div>
                     <div class = "input-group">
                         <label for = "contact-no.">Your Contact Number: </label>
-                        <input type = "tel" id = "contact-no." name = "contact-no." placeholder = "eg. +91 99203-41427" required></input>
-                    </div> 
+                        <input type = "tel" id = "contact-num" name = "contact-num" placeholder = "eg. +91 99203-41427" required />
+                        <div id = "contact-num-error"></div>
+                    </div>
                 </div>
                 <div class = "input-section">
                     <div class = "input-group">
@@ -45,10 +49,10 @@
                         <textarea rows = "10" columns = "30"></textarea>
                     </div>
                 </div>
-                <div class = "submit-button">SUBMIT</div>
+                <input type = "submit" class = "submit-button" value = "SUBMIT" />
             </form>
         </main>
         
-        <script src="" async defer></script>
+        <script src="indexJsForHireMe.js"></script>
     </body>
 </html>
